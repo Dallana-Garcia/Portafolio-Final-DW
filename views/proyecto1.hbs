@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
+
+    <!-- Animate CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Proyecto 1 | Calculadora </title>
+</head>
+
+<body>
+    <div class="wrapper">
+        
+        {{>header}}
+
+        <main class="hero">
+            <div class="bio animate__animated animate__shakeX">
+                <h2 class="bio-title">
+                    <h1>Calculadora Binaria</h1>
+                </h2>
+                <p class="bio-text">
+                    Electrónica Digital.
+                    <br>
+                  Universidad Mariano Gálvez Guatemala
+                </p>
+            </div>
+            <img src="./Images/calcu.jpg" alt="Dallana García picture">
+        </main>
+    </div>
+
+    <div class="about" id="about">
+        <div align="center" id="div-videos">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NgQ4cyiINWI?si=YJlJkOIHMADV4TYj" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen></iframe>
+        </div>
+
+        <div class="about-info">
+            <h2>Descripción</h2>
+            <div class="divider"></div>
+            <p>
+                Este proyecto fue realizado en el curso de Electrónica Digital, el cual consistía en la creación de una Calculadora Binaria,
+                dicha Calculadora fue enmaquetada en un protoboard, luces led, display, cables Jumpers, entre otros.
+                <br>
+                <br>
+                El objetivo principal, era realizar sumas y restas binarias, y que este de el resultado en el Display integrado.
+                Para poder realizar este proyecto se llevó a cabo un proceso en el cual se conocieron a profundidad cada componente.
+                <br>
+                <br>
+                Este proyecto tuvo una versión 1, el cual consistía en dar el resultado a través de luces led, de forma binaria, a diferencia
+                de esta segunda versión. 
+
+                A continuación, se tiene un video de la funcionalidad del sistema.         
+            </p>
+        </div>
+    </div>
+
+   {{>footer}}
+
+    <script src="js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

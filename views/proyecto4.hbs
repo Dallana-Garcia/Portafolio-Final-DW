@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
+
+    <!-- Animate CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Proyecto 4 | Mongo DB </title>
+</head>
+
+<body>
+    <div class="wrapper">
+        
+        {{>header}}
+
+        <main class="hero">
+            <div class="bio animate__animated animate__shakeX">
+                <h2 class="bio-title">
+                    <h1>Node Js y Mongo DB </h1>
+                </h2>
+                <p class="bio-text">
+                  Desarrollo Web<br>Universidad Mariano Gálvez de Guatemala
+                </p>
+            </div>
+            <img src="./Images/mongo.png" alt="Dallana García picture">
+        </main>
+    </div>
+
+    <div class="about" id="about">
+        <div align="center" id="div-videos">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/eg-U3OCzzjg?si=RnXHL1qLxrkjbTIS" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen></iframe>
+        </div>
+
+        <div class="about-info">
+            <h2>Descripción</h2>
+            <div class="divider"></div>
+            <p>
+                Este proyecto se llevó a cabo en el curso de Desarrollo Web de la Universidad Mariano Gálvez, sede Sololá.
+                <br><br>
+                El proyecto consiste en establecer rutas, clases, etc., y realizar la conexión de Node Js a Mongo DB.
+                Para poder adentrarnos a js, tuvimos que seguir una serie de métodos expuestos por el catedrático del curso.
+                <br><br>
+                Se estuvieron probando las peticiones desde Thunder Client, las peticiones post, get, put, delete, path, etc.
+                Y también diferentes rutas en las cuales visualizabamos la petición y respuesta por parte del servidor.
+                <br><br>
+                A continuación un video explicativo del proyecto.
+            </p>
+        </div>
+        </div>
+
+   {{>footer}}
+
+    <script src="js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
